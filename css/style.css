@@ -500,13 +500,13 @@ label{
 .banner-img.one,
 .banner-img.two,
 .banner-img.three {
-	background: url(../images/banner111.jpg) no-repeat 0px 0px;
+	background: url(../images/111.jpg) no-repeat 0px 0px;
 	background-size: cover;
 	-webkit-background-size: cover;
 	-o-background-size: cover;
 	-moz-background-size: cover;
 	-ms-background-size: cover;
-	min-height: 710px;
+	min-height: 550px;
 }
 .banner-img.one {
 	background: url(../images/banner11.jpg) no-repeat 0px 0px;
