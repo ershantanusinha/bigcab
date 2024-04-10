@@ -55,12 +55,45 @@
 	<link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet">
 	<!-- //web-fonts -->
 	
-    <style type="text/css">
-<!--
+<style type="text/css">
 .style2 {color: #0000FF}
 .style3 {font-weight: bold}
--->
-    </style>
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+</style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Organization","name":"Big Cab","url":"https://www.BigCab.in","description":"Big Cab is the best rated AC cab services with driver for all India. Book in advance for cheapest prices. 24 x 7 customer support by web chat or phone. One way cab services. Round trips. Airport transfers. Package tours. Shared Taxi. Intercity Shuttle service. More comfortable &; cheaper than going by bus or train. Serving in 3000+ cities. Great Price & Top Quality guaranteed.","logo":"https://www.BigCab.in/images/logo.png","address":"K.33/4/Flat No.102, mohalla bhutahi imali, Kotwali,Varanasi, Varanasi, Uttar Pradesh, 221001","aggregateRating":{"@type":"AggregateRating","bestRating":5,"worstRating":1,"ratingValue":"5.0","ratingCount":8843},"review":[{"@type":"Review","author":{"@type":"Person","name":"Shantanu"},"datePublished":"2023-03-26","reviewBody":"Big cabs provide very good service all over India, customer care services are best, Customer care executive Rahul helped me as and when required. I always recommend this to our friends.","reviewRating":{"@type":"Rating","bestRating":5,"ratingValue":"5.0","worstRating":1}},{"@type":"Review","author":{"@type":"Person","name":"Priya"},"datePublished":"2023-04-2","reviewBody":"Rahul was very prompt and helpful to confirm this booking. The driver was excellent. Managed to drop at the airport on time, despite delays on road due to unexpected traffic congestion. Very impressive driving skills and cooperative / flexible.","reviewRating":{"@type":"Rating","bestRating":5,"ratingValue":"5","worstRating":1}}],"contactPoint":[{"@type":"ContactPoint","telephone":"+91-860-43-55523","email":"info@BigCab.in","contactType":"Customer service"}]}		</script>
 <script type="application/ld+json">
@@ -175,14 +208,17 @@
 	<h4 align="justify"> cab service in Varanasi</h4><br>
     <div align="justify">We provide cab service in varanasi. If you are looking for cab service in varanasi we have great option for outstation cab service from varanasi. Hire sedan cab or SUV cab service in varanasi from Big Cab. 
       </div><br>
-	   <h4 align="justify" style="background-color:#FFCC00"><b>About Varanasi Kashi Banaras</b></h4>
-	    <div align="justify">Varanasi or Benaras (also known as Kashi) is one of the oldest surviving cities in the world. Varanasi's importance in Hindu mythology is signifying. English writer and literary man Mark Twain, fascinated by the legend and sanctity of Benaras, once wrote: "Benaras is older than history, older than tradition, older than legend”. Varanasi (Kashi) has been the ultimate place of pilgrimage for Hindus for centuries. Hindus believe that those who are blessed to die in the land of Varanasi can attain salvation and freedom from the cycle of birth and rebirth. varanasi has abode of Lord Shiva and Parvati.The Ganges River in Varanasi is believed to have the power to wash away human sins. The Ganges River is said to have its origins in the hair of Lord Shiva and opens into the great river at Gangotri/Gaumukh and has magical power in Varanasi. This city he has been a centre of learning and civilization for over 3000 years. The Sarnath, just 10 km away from Varanasi city, where the Buddha gave his first sermon after his enlightenment, is a symbol of the bhudhisam Renaissance. Knowledge, philosophy, culture, belief in the gods, Indian arts and crafts have flourished here for centuries. Varanasi is also a place of Jain pilgrimage and is believed to be the birthplace of the 23rd Tirthankar, Parsvanath. In Varanasi, Vaishnavism and Shaivism have coexisted in harmony. Mrs Annie Besant chose Varanasi for the Theosophical Society, and Pandit Madan Mohan Malviya founded the Benares Hindu University, the largest university in Asia. Ayurveda is said to have originated in Varanasi and is considered to be the basis of modern medicine such as plastic surgery, cataract surgery, and tartar surgery. Ayurveda and yoga teacher Maharshi Patanjali also had a close connection with the holy city of Varanasi. Varanasi has always been known for its trade and crafts, especially the finest silk, gold and silver brocade fabrics. Varanasi has also been a centre of education for centuries. Associated with the promotion of spiritualism, mysticism, Sanskrit, yoga and Hindi, Varanasi honours writers such as famous novelist Prem Chand and famous saint-poet Tulsi Das who wrote Ram Charita Manas. Varanasi, worthy of being called the cultural capital of India, provides the right platform for all cultural activities to thrive. Many of the dance and music representatives came from Varanasi. World-renowned sitar virtuosos Ravi Shankar and Ustad Bismillah Khan (famous Shahnai player) are all sons of this blessed city or have spent most of their life.</div>
+	   <button class="collapsible" style="background-color:#FFCC00"><b>Kashi/Varanasi History</b></button>
+	   <div class="content">
+  <p>Varanasi or Benaras (also known as Kashi) is one of the oldest surviving cities in the world. Varanasi's importance in Hindu mythology is signifying. English writer and literary man Mark Twain, fascinated by the legend and sanctity of Benaras, once wrote: "Benaras is older than history, older than tradition, older than legend”. Varanasi (Kashi) has been the ultimate place of pilgrimage for Hindus for centuries. Hindus believe that those who are blessed to die in the land of Varanasi can attain salvation and freedom from the cycle of birth and rebirth. varanasi has abode of Lord Shiva and Parvati.The Ganges River in Varanasi is believed to have the power to wash away human sins. The Ganges River is said to have its origins in the hair of Lord Shiva and opens into the great river at Gangotri/Gaumukh and has magical power in Varanasi. This city he has been a centre of learning and civilization for over 3000 years. The Sarnath, just 10 km away from Varanasi city, where the Buddha gave his first sermon after his enlightenment, is a symbol of the bhudhisam Renaissance. Knowledge, philosophy, culture, belief in the gods, Indian arts and crafts have flourished here for centuries. Varanasi is also a place of Jain pilgrimage and is believed to be the birthplace of the 23rd Tirthankar, Parsvanath. In Varanasi, Vaishnavism and Shaivism have coexisted in harmony. Mrs Annie Besant chose Varanasi for the Theosophical Society, and Pandit Madan Mohan Malviya founded the Benares Hindu University, the largest university in Asia. Ayurveda is said to have originated in Varanasi and is considered to be the basis of modern medicine such as plastic surgery, cataract surgery, and tartar surgery. Ayurveda and yoga teacher Maharshi Patanjali also had a close connection with the holy city of Varanasi. Varanasi has always been known for its trade and crafts, especially the finest silk, gold and silver brocade fabrics. Varanasi has also been a centre of education for centuries. Associated with the promotion of spiritualism, mysticism, Sanskrit, yoga and Hindi, Varanasi honours writers such as famous novelist Prem Chand and famous saint-poet Tulsi Das who wrote Ram Charita Manas. Varanasi, worthy of being called the cultural capital of India, provides the right platform for all cultural activities to thrive. Many of the dance and music representatives came from Varanasi. World-renowned sitar virtuosos Ravi Shankar and Ustad Bismillah Khan (famous Shahnai player) are all sons of this blessed city or have spent most of their life.</p>
+</div>
 <br/>
-      <h4 align="justify" style="background-color:#FFCC00"><b>Festivals in Varanasi</b></h4>
-	    <div align="justify">Tourists can also check out specific events to plan their trip and get the most out of their visit to varanasi. In varanasi, Makar Sankranti, Maha Shivratri, Shravan Maa, Kartikai Deepam, Annakht, Rangbari Ekadasi was celebrated prominently during various time of year.Kashi Vishwanath Temple, Buddha Mahotsav, Holi, Diwali, Ram Leela and Ganga Dushela & Dev Deepawali are important festivals.</div>
+	<button class="collapsible" style="background-color:#FFCC00"><b>Festivals of Varanasi</b></button>
+	   <div class="content">
+	    <p>Tourists can also check out specific events to plan their trip and get the most out of their visit to varanasi. In varanasi, Makar Sankranti, Maha Shivratri, Shravan Maa, Kartikai Deepam, Annakht, Rangbari Ekadasi was celebrated prominently during various time of year.Kashi Vishwanath Temple, Buddha Mahotsav, Holi, Diwali, Ram Leela and Ganga Dushela & Dev Deepawali are important festivals.</p></div>
 <br/>
-<h4 align="justify" style="background-color:#FFCC00"><b>ghats in Varanasi -worth a visit</b></h4>
-<br/>
+<button class="collapsible" style="background-color:#FFCC00"><b>Ghats of Varanasi</b></button>
+	   <div class="content"><p>
 <h5 align="justify" style="background-color:#FFCC00"><b>1.Assi Ghat</b></h5>
 	    <div align="justify">Assi Ghat is located at the southernmost tip of Varanasi. According to Hindu mythology, Assi ghat was formed when Goddess Durga threw her sword into the river Assi after killing the demon Shumbha-Nishumbha. A magnificent carving of Shiva Lingam is placed under the peeping tree where worshipers offer holy water. Devotees are believed to get rid of their sins by bathing in the holy waters of ganga river. The landmark also has several restaurants and eateries that are convenient for tourists to stay longer. Aarti ceremonies are also held daily. At night, devotees and tourists can also enjoy various cultural events such as live dancing and music shows. The ghats can also be experienced from the river by boat or hot air balloon ride. If you want to enjoy both spirituality and adventure, this landmark is a must on your itinerary.</div>
 <br/>
@@ -197,12 +233,15 @@
 <br/>
 <h5 align="justify" style="background-color:#FFCC00"><b>5.Sindhia Ghat</b></h5>
 	    <div align="justify">What makes the Sindhia Ghats different from the many ghats in Varanasi is that They are Shiva temples partly submerged in the Ganges. The temple is believed to have collapsed under the weight of a flood about 150 years ago. Legend has it that the Hindu god Agni was born here. The ghat is named after the Sindhia family, descendants of the Hindu Maratha dynasty, who founded it in 1830. People from all over the world visit this ghat to bathe in the godly river. In a calm and positive atmosphere, people sit on the ghats all day long in deep meditation.</div>
+		</p></div>
 <br/>
-<h4 align="justify" style="background-color:#FFCC00"><b>Best time to visit Varanasi</b></h4>
-   <div align="justify">Varanasi has a humid subtropical climate. Summer temperatures range from 22°C to 46°C. April to June is not recommended as the weather is very dry and not very pleasant. The monsoon season starts from July to the October and the climate during this period is mild. December to February, the winter season, is the best time to experience the wonders of this city. With an average temperature of around 15°C, it's the perfect time to explore the Holy City.</div>
+<button class="collapsible" style="background-color:#FFCC00"><b>Best Time To Visit</b></button>
+	   <div class="content"><p>
+   Varanasi has a humid subtropical climate. Summer temperatures range from 22°C to 46°C. April to June is not recommended as the weather is very dry and not very pleasant. The monsoon season starts from July to the October and the climate during this period is mild. December to February, the winter season, is the best time to experience the wonders of this city. With an average temperature of around 15°C, it's the perfect time to explore the Holy City.</p></div>
 <br/>
-<h4 align="justify" style="background-color:#FFCC00"><b>Travel Tips</b></h4>
-   <div align="justify">Varanasi is a religious city, so you should learn about the culture and dress appropriately. use a local guide & pack accordingly city's climate. It is better to arrange accommodation in advance. Keep all the necessary documents handy.</div>
+<button class="collapsible" style="background-color:#FFCC00"><b>Travel Tips</b></button>
+	   <div class="content">
+<p>Varanasi is a religious city, so you should learn about the culture and dress appropriately. use a local guide & pack accordingly city's climate. It is better to arrange accommodation in advance. Keep all the necessary documents handy.</p></div>
 <br/>
 	 <h4 align="justify"> Taxi service in Varanasi</h4><br>
     <div align="justify">We provide Taxi service in varanasi. If you are looking for taxi service in varanasi we have great option for outstation taxi service from varanasi. Hire sedan taxi or SUV taxi service in varanasi from Big Cab. 
@@ -211,7 +250,7 @@
     <div align="justify">We provide Cab for local sightseen in varanasi. Our trip starts from your Doorsteps/Hotel and we take you to all the places in varanasi. Trip ends in evening. Cost of Local sightseen is Rs 2200 + Parking for Sedan Car & Rs 2800 + Parking For SUV Ertiga.
       </div><br>
     <h4 align="justify"> Outstation Cabs in Varanasi</h4><br>
-    <div align="justify">Hire outstation taxi from Big Cab. We offer cab services with drivers who are extremely courteous, professional and easy to talk to, to make your journey momorable. We offer Sedan Cars at 11 Rs/Km & SUV cars like Eartiga at 14 Rs/Km & Innova at Rs 15/Km. please note minimum up and down Km should be 250 Km. For Booking Call us Now to get the best deals on outstation travels from varanasi.
+    <div align="justify">Hire outstation taxi from Big Cab. We offer cab services with drivers who are extremely courteous, professional and easy to talk to, to make your journey momorable. We offer Sedan Cars at 11 Rs/Km & SUV cars like Eartiga at 14 Rs/Km & Innova at Rs 16/Km. please note minimum up and down Km should be 250 Km. For Booking Call us Now to get the best deals on outstation travels from varanasi.
       
     </div><br>
 
@@ -224,7 +263,7 @@
       Moving around varanasi is now easier because of our cab rental services which allow you to book a Taxi on rent as per your Time and Comfort. we provide Car Rental in very affordable rates and as per your requirements. For More Info contact us via call or Chat. we will be happy to provide you info regarding the same. contact us now.
     </div><br>
     <h4 align="justify"> Varanasi Airport Taxi Service</h4><br>
-    <div align="justify">We at Big Cab provide Airport pickup and drop taxi service at very affordable Rates. Fix charges and on time Cabs makes your Airport Transfer hassel-free. Our Airport Taxi service in varanasi starts from Rs 800 for Sedan Car and Rs 1200 For SUV. For more info on Airport Taxi in varanasi please call us on our numbers.
+    <div align="justify">We at Big Cab provide Airport pickup and drop taxi service at very affordable Rates. Fix charges and on time Cabs makes your Airport Transfer hassel-free. Our Airport Taxi service in varanasi starts from Rs 800 for Sedan Car and Rs 1300 For SUV. For more info on Airport Taxi in varanasi please call us on our numbers.
     </div><br>
 	    <h4 align="justify"> One Way Cab in Varanasi</h4><br>
     <div align="justify">We offer one Way Cabs to Delhi,Mumbai,Kolkata,Lucknow,pryagraj,kanpur and noida etc. in very economical rates. Contact us for more information on it. Call us now on our Given Numbers.
@@ -249,9 +288,9 @@
 				<!-- team text -->
 				<div class="footerv2-w3ls mt-3">
 					<h4>Book Tata Zest</h4>
-					<p class="my-2">Local sightseen: 2000</p>
+					<p class="my-2">Local sightseen: 2200</p>
 					<p class="my-2">Airport drop :800</p>
-					<p class="my-2">Outstation : 11 rs per km</p>
+					<p class="my-2">Outstation : 11 Rs per km</p>
 					<p><a onClick="return gtag_report_conversion('http://www.bigcab.in/');" href="https://wa.me/+918318789932" aria-pressed="false" >
 							
 							<button type="button" class="style2"> Book Now </button>
@@ -267,9 +306,9 @@
 				<!-- team text -->
 				<div class="footerv2-w3ls mt-3">
 					<h4>Book Swift Dezire</h4>
-					<p class="my-2">Local sightseen: 2000</p>
-					<p class="my-2">Airport drop :800</p>
-					<p class="my-2">Outstation : 11 rs per km</p>
+					<p class="my-2">Local sightseen: 2400</p>
+					<p class="my-2">Airport drop :900</p>
+					<p class="my-2">Outstation : 12 Rs per km</p>
 					<p><a onClick="return gtag_report_conversion('http://www.bigcab.in/');" href="https://wa.me/+918318789932" aria-pressed="false" >
 							
 							<button type="button" class="style2 style3"> Book Now </button>
@@ -284,9 +323,9 @@
 				<!-- team text -->
 				<div class="footerv2-w3ls mt-3">
 					<h4>Book Innova</h4>
-					<p class="my-2">Local sightseen: 3000</p>
-					<p class="my-2">Airport drop :1200</p>
-					<p class="my-2">Outstation : 15 rs per km</p>
+					<p class="my-2">Local sightseen: 3200</p>
+					<p class="my-2">Airport drop :1400</p>
+					<p class="my-2">Outstation : 16 rs per km</p>
 					<p><a onClick="return gtag_report_conversion('http://www.bigcab.in/');" href="https://wa.me/+918318789932" aria-pressed="false" >
 							
 							<button type="button" class="style2"> Book Now </button>
@@ -301,9 +340,9 @@
 				<!-- team text -->
 				<div class="footerv2-w3ls mt-3">
 					<h4>Book Innova Crysta</h4>
-					<p class="my-2">Local sightseen: 3200</p>
-					<p class="my-2">Airport drop :1500</p>
-					<p class="my-2">Outstation : 16 rs per km</p>
+					<p class="my-2">Local sightseen: 3600</p>
+					<p class="my-2">Airport drop :1600</p>
+					<p class="my-2">Outstation : 18 rs per km</p>
 					<p><a onClick="return gtag_report_conversion('http://www.bigcab.in/');" href="https://wa.me/+918318789932" aria-pressed="false" >
 							
 							<button type="button" class="style2"> Book Now </button>
@@ -315,9 +354,6 @@
 	</div>
 </section>
 <!-- //team -->
-
-	
-	
 <!--footer-->
 <footer class="py-sm-5 py-4 px-md-5 px-3">
   <div class="container-fluid pt-lg-5">
@@ -557,6 +593,22 @@
 								
 			});
 	</script>
+	<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
 	<!-- //here ends scrolling icon -->
 	<!-- start-smoth-scrolling -->
 	
